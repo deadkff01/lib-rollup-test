@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "babel", "react-hooks", "prettier"],
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "prettier/prettier": ["warn"],
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": [1, "always", { "ignoreClassFields": true }],
+    "no-console": 0,
+    "spaced-comment": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "codeFrame": true
+  },
+  "settings": {
+    "import/ignore": ["node_modules/*", "public/*", "dist/*"]
+  },
+  "globals": {
+    "it": true,
+    "test": true,
+    "expect": true
+  }
+}
